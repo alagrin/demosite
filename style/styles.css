@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat','Merriweather';
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+}
+header {
+    background-color: aquamarine;
+}
+section {
+    margin-top: 20px;
+}
+.nav-wrapper {
+    
+}
+.nav-wrapper ul {
+    list-style: none;
+    display: block;
+}
+
+.nav-wrapper li {
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+}
+
+.nav-wrapper a:hover {
+    color: blue;
+}
+
+.parallax {
+    background-image: url("../img/parallax.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.parallax-text {
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 200px;
+  color: #FFF;
+}
+
+.image-gallery {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.responsive {
+    display: inline;
+    padding: 10px;
+}
+
+.responsive img {
+    border-radius: 5px;
+}
+
+.responsive img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
