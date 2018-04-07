@@ -11,13 +11,13 @@ html, body {
     margin: 0 auto;
 }
 header {
-    background-color: aquamarine;
+    
 }
 section {
     margin-top: 20px;
 }
 .nav-wrapper {
-    
+    float: right;
 }
 .nav-wrapper ul {
     list-style: none;
@@ -60,7 +60,7 @@ section {
       '.profile-img' '.profile';
     grid-auto-columns: 1fr 1fr;
     grid-gap: 20px;
-    margin-top: 20px;
+    margin: 20px 20px;
 }
 .profile-img img {
     border-radius: 50%;
@@ -104,11 +104,14 @@ section {
 
 .testimonial {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #contact {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 20px 20px;
 }
 
 .location {
