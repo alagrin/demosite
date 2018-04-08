@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper" id="navwrap">
                 <nav>
                     <ul>
                         <li>
@@ -106,6 +107,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ea saepe accusamus eius tempora
                             sit mollitia id ipsum enim quam.</p>
                     </div>
+                </div>
+                <div class="testimonial">
                     <div class="testimonial-pic">
                         <h3>Person 2</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque neque adipisci fugiat dicta
@@ -113,50 +116,59 @@
                             officiis commodi.</p>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        <h3>Person 3</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae possimus, dolores exercitationem
-                            minima doloremque odit veritatis nam deleniti, ut ipsa non consequuntur atque aliquam consectetur.</p>
-                    </div>
-                    <div class="testimonial-pic"></div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <h3>Person 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae possimus, dolores exercitationem minima
+                        doloremque odit veritatis nam deleniti, ut ipsa non consequuntur atque aliquam consectetur.</p>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        <h3>Person 4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum deleniti tempora mollitia.
-                            Maiores fuga minus similique consequatur numquam quo quis porro eum?</p>
-                    </div>
-                    <div class="testimonial-pic"></div>
-                </div>
+                <div class="testimonial-pic"></div>
             </div>
-            <div class="section" id="contact">
-                <div class="location">
-                    <h1>Location</h1>
-                    <div class="map"></div>
-                    <p>ALAGRIN DESIGN</p>
-                    <p>123 Main Street</p>
-                    <p>Seattle, WA 98122</p>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <h3>Person 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum deleniti tempora mollitia. Maiores
+                        fuga minus similique consequatur numquam quo quis porro eum?</p>
                 </div>
-                <div class="form-content">
-                    <h1>Reach out</h1>
-                    <form action="#">
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" name="fullname" id="fullname">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-                        <label for="comments">Comments:</label>
-                        <textarea name="comments" id="comment-box" cols="30" rows="10"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+                <div class="testimonial-pic"></div>
             </div>
-        </main>
-        <footer></footer>
-        <button id="scrollTop">
-            <i class="font awesome"></i>
-        </button>
+    </div>
+    <div class="section" id="contact">
+        <div class="location">
+            <h1>Location</h1>
+            <div class="map"></div>
+            <p>ALAGRIN DESIGN</p>
+            <p>123 Main Street</p>
+            <p>Seattle, WA 98122</p>
+        </div>
+        <div class="form-content">
+            <h1>Reach out</h1>
+            <form action="#">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comment-box" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+    <button id="scrollTop">
+        <i class="font awesome"></i>
+    </button>
     </div>
 </body>
+<!-- <script>
+  function hideNav() {
+  document.getElementById('navwrap').style.display = 'none';
+};
+let el = document.getElementById('navwrap');
+if (el) {
+    el.addEventListener('click', hideNav);
+}
+</script> -->
 
 </html>

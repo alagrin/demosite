@@ -72,8 +72,8 @@ section {
     /* grid-template-areas: 
       '.projects-list' '.img-gallery'; */
 }
-#projects-list {
-    /* display: flex; */
+#project-list {
+    list-style: none;
 }
 
 .image-gallery {
@@ -104,6 +104,7 @@ section {
 
 .testimonial {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
 }
@@ -122,4 +123,26 @@ section {
 .form-content {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 450px) {
+    .image-gallery {
+        
+    }
+    .image-gallery, img{
+        
+        width: 100%;
+    }
+    #reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
 }
