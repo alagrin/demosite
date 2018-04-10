@@ -10,9 +10,7 @@ html, body {
 .wrapper {
     margin: 0 auto;
 }
-header {
-    
-}
+
 section {
     margin-top: 20px;
 }
@@ -56,29 +54,40 @@ section {
 
 #background {
     display: grid;
-    grid-template-areas: 
-      '.profile-img' '.profile';
-    grid-auto-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns:  1fr 1fr ;
     margin: 20px 20px;
+    justify-content: center;
 }
 .profile-img img {
     border-radius: 50%;
     width: 300px;
 }
 
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 #projects {
     display: grid;
-    /* grid-template-areas: 
-      '.projects-list' '.img-gallery'; */
+    grid-template-areas: 
+      '.projects-list' '.img-gallery';
+      grid-gap: 20px;
 }
 #project-list {
     list-style: none;
 }
 
-.image-gallery {
-    /* display: flex;  */
-    /* justify-content: space-between; */
+.img-gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .responsive {
@@ -126,13 +135,42 @@ section {
 }
 
 @media screen and (max-width: 450px) {
-    .image-gallery {
-        
+    .parallax {
+        position: inherit;
     }
-    .image-gallery, img{
-        
-        width: 100%;
+    .parallax-text{
+        top: 300px;
+        left: 100px;
     }
+    
+    /* .img-gallery {
+        display: flex;
+        flex-direction: column;
+    } */
+    /* .img-gallery, img{
+        height: 300px;
+        width: 90%;
+    } */
+
+    #background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #projects {
+       display: inline-grid;
+       grid-auto-columns: 1fr 1fr;
+    }
+
+    #project-list {
+        display: flex;
+    } */
+
+    .img-gallery {
+        display: flex;
+    }
+    
     #reviews{
         display: flex;
         flex-direction: column;
