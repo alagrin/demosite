@@ -1,11 +1,10 @@
 html {
-    box-sizing: border-box;
     font-family: 'Montserrat','Merriweather';
 }
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+
+    box-sizing: border-box;
 }
 .wrapper {
     margin: 0 auto;
@@ -14,9 +13,11 @@ html, body {
 section {
     margin-top: 20px;
 }
+
 .nav-wrapper {
     float: right;
 }
+
 .nav-wrapper ul {
     list-style: none;
     display: block;
@@ -33,6 +34,14 @@ section {
 
 .nav-wrapper a:hover {
     color: blue;
+}
+
+#logo {
+    margin-left: 10px;
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 50px;
+    margin-left: 0;
 }
 
 .parallax {
@@ -76,36 +85,32 @@ section {
     flex-wrap: nowrap;
 }
 
-#projects {
+#projects.section {
     display: grid;
-    grid-auto-columns: repeat(6, 1fr);
-    margin: 0 10px;
+    grid-auto-columns: auto auto auto auto;
+    margin-left: 20px;
 }
+
 #project-list {
-    list-style: none;
-    padding-right: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
 }
 
 .img-gallery {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
 }
 
 .responsive {
-    max-width: 300px;
+    margin: 10px;
+    max-width: 100%;
 }
 .responsive img {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
+    width: auto;
+    height: 250px;
+    border-radius: 8px;
 } 
-
-.responsive img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
 
 #reviews {
   display: grid;
@@ -116,15 +121,20 @@ section {
 
 .testimonial {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
 }
 
 #contact {
     display: grid;
-    grid-template-columns: auto auto;
-    margin: 20px 20px;
+    grid-template-areas: 
+        '.location' '.form-content';
+    grid-gap: 200px;
+    margin: 0 20px;
+}
+
+.form-content, input, #comment-box {
+    border-radius: 8px;
 }
 
 .location {
@@ -135,27 +145,27 @@ section {
 .form-content {
     display: flex;
     flex-direction: column;
+    flex-basis: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .img-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 @media screen and (max-width: 450px) {
     .parallax {
         position: inherit;
     }
+
     .parallax-text{
         top: 300px;
         left: 100px;
-    }
-    
-     .img-gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } 
-     .responsive {
-        margin: 10px 10px;
-        padding-top: 10px;
-        height: 100%;
-        width: 100%;
     }
 
     #background {
@@ -164,21 +174,41 @@ section {
         align-items: center;
     }
 
+    #project-list {
+        margin: 0 auto;
+    }
+
     .img-gallery {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive img {
+        width: auto;
     }
     
     #reviews{
         display: flex;
         flex-direction: column;
     }
+
     .location {
         display: flex;
         flex-direction: column;
     }
+
     #contact {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        line-height: 1.2rem;
     }
+
+    .form-content input {
+        margin-bottom: 20px;
+        
+    }
+
 }

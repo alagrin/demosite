@@ -47,9 +47,8 @@
                     <li></li>
                 </ul>
             </div> -->
-            <div id="logo"></div>
-            <div id="tagline">
-                <h3>Tagline</h3>
+            <div id="logo">
+                <h4>Logo</h4>
             </div>
         </header>
         <div class="parallax"></div>
@@ -73,12 +72,12 @@
                 </div>
             </div>
             <div class="section" id="projects">
-                <ul id="project-list">
-                    <li>Basic</li>
-                    <li>Photography</li>
-                    <li>Web Design</li>
-                    <li>Social Media</li>
-                </ul>
+                <select id="project-list">
+                    <option>Basic</option>
+                    <option>Photography</option>
+                    <option>Web Design</option>
+                    <option>Social Media</option>
+                </select>
                 <div class="img-gallery">
                     <div class="responsive">
                         <img src="https://picsum.photos/200/?image=0" alt="">
@@ -143,13 +142,13 @@
         </div>
         <div class="form-content">
             <h1>Reach out</h1>
-            <form action="#">
+            <form action="#" class="">
                 <label for="fullname">Full Name:</label>
-                <input type="text" name="fullname" id="fullname">
+                <input type="text" name="fullname" id="fullname"><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email"><br>
                 <label for="comments">Comments:</label>
-                <textarea name="comments" id="comment-box" cols="30" rows="10"></textarea>
+                <textarea name="comments" id="comment-box" cols="30" rows="10"></textarea><br>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -161,7 +160,7 @@
     </button>
     </div>
 </body>
-<!-- <script>
+<script>
   function hideNav() {
   document.getElementById('navwrap').style.display = 'none';
 };
@@ -169,6 +168,6 @@ let el = document.getElementById('navwrap');
 if (el) {
     el.addEventListener('click', hideNav);
 }
-</script> -->
+</script>
 
 </html>
